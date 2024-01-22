@@ -7,7 +7,7 @@ body {
 .top-nav {
   background-color: #ebecec;
 }
-.main-container {
+.container-placement {
   margin: 0 auto;
 }
 .top-nav-bg {
@@ -23,9 +23,60 @@ body {
   margin-left: 8px;
   padding-right: 15px;
 }
+.top-nav-link a {
+  font-size: 14px;
+}
+.nav-img {
+  width: 20px;
+}
+.search-container {
+  padding: 25px 20px;
+}
 
+.search-bar {
+  background: none;
+  border: 4px solid #ff2153;
+  width: 65%;
+  border-radius: 10px;
+}
+.search-bar input {
+  height: 25px;
+  border: 0;
+  outline: 0;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.507);
+  padding-left: 50px;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+.top-nav-btn-style {
+  background: #ff2153;
+  color: white;
+  padding: 5px 40px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+.categories {
+  width: 100%;
+  height: auto;
+}
+.img-text-category {
+  border: 1px solid rgba(0, 0, 0, 0.118);
+  width: 100%;
+}
+.img-text-category a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.719);
+}
+/*  */
 @media screen and (min-width: 768px) {
-  .main-container {
+  .container-placement {
     width: 100%;
   }
   .top-nav-size {
@@ -33,12 +84,12 @@ body {
   }
 }
 @media screen and (min-width: 1024px) {
-  .main-container {
+  .container-placement {
     width: 992px;
   }
 }
 @media screen and (min-width: 1250px) {
-  .main-container {
+  .container-placement {
     width: 1170px;
   }
   .top-nav-size {
@@ -46,7 +97,7 @@ body {
   }
 }
 @media screen and (min-width: 1400px) {
-  .main-container {
+  .container-placement {
     width: 1368px;
   }
 }
