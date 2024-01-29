@@ -34,12 +34,17 @@ body {
 }
 
 .search-bar {
+  width: 100%;
   background: none;
   border: 4px solid #ff2153;
-  width: 65%;
   border-radius: 10px;
+  /* padding: 10px; */
+}
+.buttons-container {
+  width: calc(100% - 180px);
 }
 .search-bar input {
+  width: 100%;
   height: 25px;
   border: 0;
   outline: 0;
@@ -56,11 +61,15 @@ input[type="search"]::-webkit-search-results-decoration {
 .top-nav-btn-style {
   background: #ff2153;
   color: white;
-  padding: 5px 40px;
+  padding: 10px 40px;
   border: 0;
+  font-size: 14px;
   border-radius: 5px;
   cursor: pointer;
   text-align: center;
+}
+.buttons-top-nav img {
+  max-width: 24px;
 }
 .categories {
   width: 100%;
@@ -69,10 +78,165 @@ input[type="search"]::-webkit-search-results-decoration {
 .img-text-category {
   border: 1px solid rgba(0, 0, 0, 0.118);
   width: 100%;
+  padding: 10px;
+}
+.img-text-category img {
+  max-width: 100%;
+  height: 30px;
 }
 .img-text-category a {
   text-decoration: none;
+  text-align: center;
+  font-size: 13px;
   color: rgba(0, 0, 0, 0.719);
+}
+.img-text-category:hover {
+  background-color: #ededed;
+  border-bottom: 2px solid black;
+}
+.company-links img {
+  width: 100%;
+  height: 30px;
+}
+.company-links {
+  border: 1px solid rgba(0, 0, 0, 0.118);
+  width: 100%;
+  padding: 10px;
+}
+.company-links:hover {
+  .img-text-category:hover {
+    background-color: #ededed;
+    border-bottom: 2px solid black;
+  }
+}
+.grid-block {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: minmax(100px, 300px);
+}
+.top-banner h3 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 40px;
+}
+.page-link {
+  /* background-color: white; */
+  width: 100%;
+  height: 100%;
+}
+.page-link:hover {
+  box-shadow: -1px 1px 30px 12px rgba(0, 0, 0, 0.48) inset;
+}
+.top-banner {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+  text-align: center;
+  /* padding: 40px; */
+}
+.top-banner img {
+  width: 100%;
+  max-height: 340px;
+}
+
+.banner-1 {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  background-color: black;
+  background-image: url(https://cdn.onoff.ge/media/thumbs/070/0702107.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* box-shadow: -4px 41px 69px -10px rgba(0, 0, 0, 0.38); */
+  /* height: 100%; */
+}
+.banner-2 {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  background-color: black;
+  background-image: url(https://cdn.onoff.ge/media/thumbs/070/0702109.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* height: 100%; */
+}
+.banner-3 {
+  grid-row: 1/2;
+  grid-column: 3/5;
+  background-color: black;
+  background-image: url(https://cdn.onoff.ge/media/thumbs/070/0705781.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* height: 100%; */
+}
+.banner-4 {
+  /* background-color: black; */
+  grid-row: 2/3;
+  background-color: black;
+  grid-column: 1/2;
+  background-image: url(https://cdn.onoff.ge/media/thumbs/070/0702113.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 100%;
+}
+.banner-5 {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  background-color: black;
+  background-image: url("https://www.thespruce.com/thmb/oCImc4Kds6L8Q5BIPE_lsf9uth8=/fit-in/1500x4225/filters:no_upscale():max_bytes(150000):strip_icc()/spr-detail-black-decker-dustbuster-handheld-vacuum-cordless-advanced-clean-hhvk515j00ff-dburreson-003-3-e17294f56a034073933b50bb77185934.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* height: 100%; */
+}
+.banner-6 {
+  grid-row: 2/3;
+  grid-column: 3/5;
+  background-color: black;
+  background-image: url(./img/hhargreaves_201103_ecl1040_ps5_main_26394.jpg);
+  background-position: center;
+  background-size: cover;
+
+  background-repeat: no-repeat;
+}
+.itemblock-container {
+  width: 100%;
+}
+
+.itemblock img {
+  max-width: 160px;
+  height: 140px;
+}
+
+.shop-item {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+.shop-item h4 {
+  font-size: 14px;
+}
+.normal-price {
+  font-size: 12px;
+  font-weight: bold;
+}
+.discount-price {
+  color: #ff2153;
+  font-size: 22px;
+  font-weight: bold;
+}
+.footer-bg {
+  background-color: #000;
+}
+.text-size {
+  width: 150px;
 }
 /*  */
 @media screen and (min-width: 768px) {
